@@ -4,14 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "clinet": " cd client && npm run dev",
-    "client-install": "cd client && npm install",
-    "server-install": "npm install",
-    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
-    "dev": "concurrently \"npm run server\" \"npm run clinet\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
