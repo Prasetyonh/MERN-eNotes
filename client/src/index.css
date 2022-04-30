@@ -210,12 +210,12 @@ a {
     padding: 15px;
     border: 5px solid;
   }
-  .register-page img,
+  /* .register-page img,
   .login-page img {
     margin-left: 60px;
     width: 250px;
     margin-bottom: -40px;
-  }
+  } */
 
   .create-note {
     margin-top: 5%;

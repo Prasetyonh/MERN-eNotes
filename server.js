@@ -6,7 +6,6 @@ const cors = require("cors");
 
 const userRouter = require("./routes/userRouter");
 const noteRouter = require("./routes/noteRouter");
-const path = require("path");
 
 const app = express();
 app.use(express.json());
@@ -31,9 +30,11 @@ mongoose.connect(
 );
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  const path = require("path");
+
+  app.get("/", (req, res) => {
+    app.use(express.static(path.resolve(__dirname, "client/build")));
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 

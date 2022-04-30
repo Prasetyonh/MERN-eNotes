@@ -63,7 +63,7 @@ export default function Login({ setIsLogin }) {
             <div className="col col-xl-10">
               <div className="card shadow">
                 <div className="row g-0">
-                  <div className="col-md-6 col-lg-5 d-sm-none d-md-block">
+                  <div className="col-md-6 col-lg-5 d-none d-md-block">
                     <img
                       src="../assets/images/login.png"
                       alt="login form"
@@ -149,7 +149,7 @@ export default function Login({ setIsLogin }) {
             <div className="col col-xl-10">
               <div className="card shadow">
                 <div className="row g-0">
-                  <div className="col-md-6 col-lg-5 d-sm-none d-md-block">
+                  <div className="col-md-6 col-lg-5 d-none d-md-block">
                     <img
                       src="../assets/images/signup.png"
                       alt="login form"
