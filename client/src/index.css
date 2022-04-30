@@ -200,6 +200,7 @@ a {
   .notes-page header ul li {
     margin-top: -20px;
     margin-bottom: -20px;
+    padding: 7px;
   }
 
   .create-note {
