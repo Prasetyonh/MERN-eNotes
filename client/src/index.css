@@ -76,7 +76,8 @@ a {
 .notes-page header ul li {
   list-style: none;
   display: inline-block;
-  padding: 10px;
+  padding: 0 15px;
+  margin-top: 15px;
 }
 .notes-page header ul li a {
   text-transform: uppercase;
@@ -88,7 +89,6 @@ a {
 
 .notes-page section {
   width: 100%;
-
   padding: 20px 0;
 }
 
@@ -197,10 +197,13 @@ a {
 }
 
 @media (max-width: 500px) {
+  .notes-page header ul {
+    margin-left: -33px;
+  }
   .notes-page header ul li {
     margin-top: -20px;
     margin-bottom: -20px;
-    padding: 7px;
+    padding: 10px;
   }
 
   .create-note {

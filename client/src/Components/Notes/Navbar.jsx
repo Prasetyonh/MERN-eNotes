@@ -41,11 +41,11 @@ const Navbar = ({ setIsLogin }) => {
           <li>
             <Link to={"/"}>Home</Link>
           </li>
-          <li>||</li>
+          <li className="px-2">||</li>
           <li>
             <Link to={"/create"}>Create Note</Link>
           </li>
-          <li>||</li>
+          <li className="px-2">||</li>
           <li>
             <Link onClick={logoutSubmit} to={"/"}>
               Logout
