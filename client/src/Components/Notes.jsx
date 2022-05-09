@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Notes = ({ setIsLogin }) => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <div className="notes-page">
         <Nav setIsLogin={setIsLogin} />
         <section>
